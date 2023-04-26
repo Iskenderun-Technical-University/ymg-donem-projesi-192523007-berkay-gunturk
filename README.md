@@ -2,3 +2,4 @@
   
  PANSİYON KAYIT UYGULAMASINDA AdminGiriş->YeniMüşteriGiriş->Odalar->Müşteriler->MüşteriMesajları->Hakkımızda ve Çıkış Panellerimiz mevcut olacaktır.
 Pansiyonda gerekli olan tüm gereksinimler fazlasıyla karşılanacaktır.
+![Adsız](https://user-images.githubusercontent.com/78702311/234627575-3c53e628-c312-4be9-a22b-5a5039a8fb53.png)

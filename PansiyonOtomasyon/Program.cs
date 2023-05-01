@@ -16,7 +16,7 @@ namespace PansiyonOtomasyon
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormYeniMusteri());
+            Application.Run(new AnaSayfaForm());
         }
     }
 }

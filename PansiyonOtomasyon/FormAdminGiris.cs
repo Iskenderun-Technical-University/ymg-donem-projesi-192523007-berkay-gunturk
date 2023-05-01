@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PansiyonOtomasyon
 {
-    public partial class Form1 : Form
+    public partial class AdminGiriş : Form
     {
-        public Form1()
+        public AdminGiriş()
         {
             InitializeComponent();
         }
@@ -34,10 +34,25 @@ namespace PansiyonOtomasyon
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (textBoxKullaniciAdi.Text == "admin" && textBoxSifre.Text == "12345")
+            {
+                AnaSayfaForm fr = new AnaSayfaForm();
+                fr.Show();
+                this.Hide();
+            }
 
+            else
+            {
+                MessageBox.Show("Kullanıcı adı veya şifre hatalı");
+            }
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

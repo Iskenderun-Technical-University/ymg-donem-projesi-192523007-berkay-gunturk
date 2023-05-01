@@ -30,250 +30,300 @@ namespace PansiyonOtomasyon
         private void InitializeComponent()
         {
             this.groupBoxMusteriBilgi = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.textBoxCinsiyet = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.btnKaydet = new System.Windows.Forms.Button();
+            this.mskdTxtBoxTlfn = new System.Windows.Forms.MaskedTextBox();
+            this.dateCikisTarih = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeGiris = new System.Windows.Forms.DateTimePicker();
+            this.textBoxUcret = new System.Windows.Forms.TextBox();
+            this.textBoxOdaNo = new System.Windows.Forms.TextBox();
+            this.textBoxTcNo = new System.Windows.Forms.TextBox();
+            this.textBoxMail = new System.Windows.Forms.TextBox();
+            this.textBoxSoyad = new System.Windows.Forms.TextBox();
+            this.labelTlfn = new System.Windows.Forms.Label();
+            this.textBoxAd = new System.Windows.Forms.TextBox();
+            this.labelCikisTrh = new System.Windows.Forms.Label();
+            this.labelUcret = new System.Windows.Forms.Label();
+            this.labelGirisTrh = new System.Windows.Forms.Label();
+            this.labelOdaNo = new System.Windows.Forms.Label();
+            this.labelMail = new System.Windows.Forms.Label();
+            this.labelSoyadı = new System.Windows.Forms.Label();
+            this.labelTcNo = new System.Windows.Forms.Label();
+            this.labelAdı = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBoxOdalar = new System.Windows.Forms.GroupBox();
-            this.btnOda101 = new System.Windows.Forms.Button();
-            this.btnOda102 = new System.Windows.Forms.Button();
-            this.btnOda103 = new System.Windows.Forms.Button();
-            this.btnOda106 = new System.Windows.Forms.Button();
-            this.btnOda105 = new System.Windows.Forms.Button();
-            this.btnOda104 = new System.Windows.Forms.Button();
             this.btnOda109 = new System.Windows.Forms.Button();
             this.btnOda108 = new System.Windows.Forms.Button();
             this.btnOda107 = new System.Windows.Forms.Button();
+            this.btnOda106 = new System.Windows.Forms.Button();
+            this.btnOda105 = new System.Windows.Forms.Button();
+            this.btnOda104 = new System.Windows.Forms.Button();
+            this.btnOda103 = new System.Windows.Forms.Button();
+            this.btnOda102 = new System.Windows.Forms.Button();
+            this.btnOda101 = new System.Windows.Forms.Button();
             this.btnBOŞ = new System.Windows.Forms.Button();
             this.btnDOLU = new System.Windows.Forms.Button();
-            this.btnKaydet = new System.Windows.Forms.Button();
             this.groupBoxMusteriBilgi.SuspendLayout();
             this.groupBoxOdalar.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxMusteriBilgi
             // 
-            this.groupBoxMusteriBilgi.Controls.Add(this.btnKaydet);
-            this.groupBoxMusteriBilgi.Controls.Add(this.maskedTextBox1);
-            this.groupBoxMusteriBilgi.Controls.Add(this.dateTimePicker2);
-            this.groupBoxMusteriBilgi.Controls.Add(this.dateTimePicker1);
-            this.groupBoxMusteriBilgi.Controls.Add(this.textBox6);
-            this.groupBoxMusteriBilgi.Controls.Add(this.textBox7);
-            this.groupBoxMusteriBilgi.Controls.Add(this.textBox8);
-            this.groupBoxMusteriBilgi.Controls.Add(this.textBox3);
-            this.groupBoxMusteriBilgi.Controls.Add(this.textBox2);
-            this.groupBoxMusteriBilgi.Controls.Add(this.label9);
-            this.groupBoxMusteriBilgi.Controls.Add(this.textBox1);
-            this.groupBoxMusteriBilgi.Controls.Add(this.label8);
-            this.groupBoxMusteriBilgi.Controls.Add(this.label7);
-            this.groupBoxMusteriBilgi.Controls.Add(this.label6);
-            this.groupBoxMusteriBilgi.Controls.Add(this.label5);
-            this.groupBoxMusteriBilgi.Controls.Add(this.label4);
-            this.groupBoxMusteriBilgi.Controls.Add(this.label3);
             this.groupBoxMusteriBilgi.Controls.Add(this.label2);
+            this.groupBoxMusteriBilgi.Controls.Add(this.textBoxCinsiyet);
             this.groupBoxMusteriBilgi.Controls.Add(this.label1);
+            this.groupBoxMusteriBilgi.Controls.Add(this.btnKaydet);
+            this.groupBoxMusteriBilgi.Controls.Add(this.mskdTxtBoxTlfn);
+            this.groupBoxMusteriBilgi.Controls.Add(this.dateCikisTarih);
+            this.groupBoxMusteriBilgi.Controls.Add(this.dateTimeGiris);
+            this.groupBoxMusteriBilgi.Controls.Add(this.textBoxUcret);
+            this.groupBoxMusteriBilgi.Controls.Add(this.textBoxOdaNo);
+            this.groupBoxMusteriBilgi.Controls.Add(this.textBoxTcNo);
+            this.groupBoxMusteriBilgi.Controls.Add(this.textBoxMail);
+            this.groupBoxMusteriBilgi.Controls.Add(this.textBoxSoyad);
+            this.groupBoxMusteriBilgi.Controls.Add(this.labelTlfn);
+            this.groupBoxMusteriBilgi.Controls.Add(this.textBoxAd);
+            this.groupBoxMusteriBilgi.Controls.Add(this.labelCikisTrh);
+            this.groupBoxMusteriBilgi.Controls.Add(this.labelUcret);
+            this.groupBoxMusteriBilgi.Controls.Add(this.labelGirisTrh);
+            this.groupBoxMusteriBilgi.Controls.Add(this.labelOdaNo);
+            this.groupBoxMusteriBilgi.Controls.Add(this.labelMail);
+            this.groupBoxMusteriBilgi.Controls.Add(this.labelSoyadı);
+            this.groupBoxMusteriBilgi.Controls.Add(this.labelTcNo);
+            this.groupBoxMusteriBilgi.Controls.Add(this.labelAdı);
             this.groupBoxMusteriBilgi.Location = new System.Drawing.Point(2, 2);
             this.groupBoxMusteriBilgi.Name = "groupBoxMusteriBilgi";
-            this.groupBoxMusteriBilgi.Size = new System.Drawing.Size(417, 381);
+            this.groupBoxMusteriBilgi.Size = new System.Drawing.Size(417, 394);
             this.groupBoxMusteriBilgi.TabIndex = 0;
             this.groupBoxMusteriBilgi.TabStop = false;
             this.groupBoxMusteriBilgi.Text = "Müşteri Bilgileri";
             // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker2.Location = new System.Drawing.Point(105, 300);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(257, 27);
-            this.dateTimePicker2.TabIndex = 37;
-            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker1.Location = new System.Drawing.Point(105, 267);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(257, 27);
-            this.dateTimePicker1.TabIndex = 36;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox6.Location = new System.Drawing.Point(105, 234);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(257, 27);
-            this.textBox6.TabIndex = 35;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox7.Location = new System.Drawing.Point(105, 201);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(257, 27);
-            this.textBox7.TabIndex = 34;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox8.Location = new System.Drawing.Point(105, 168);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(257, 27);
-            this.textBox8.TabIndex = 33;
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox3.Location = new System.Drawing.Point(105, 135);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(257, 27);
-            this.textBox3.TabIndex = 32;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(105, 69);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(257, 27);
-            this.textBox2.TabIndex = 30;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(45, 107);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(54, 17);
-            this.label9.TabIndex = 29;
-            this.label9.Text = "Telefon:";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(105, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(257, 27);
-            this.textBox1.TabIndex = 28;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(22, 307);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(74, 17);
-            this.label8.TabIndex = 27;
-            this.label8.Text = "Çıkış Tarihi:";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(54, 239);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 17);
-            this.label7.TabIndex = 26;
-            this.label7.Text = "Ücret:";
-            this.label7.Click += new System.EventHandler(this.label7_Click_1);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(23, 274);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 17);
-            this.label6.TabIndex = 25;
-            this.label6.Text = "Giriş Tarihi:";
-            this.label6.Click += new System.EventHandler(this.label6_Click_1);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(40, 206);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 17);
-            this.label5.TabIndex = 24;
-            this.label5.Text = "Oda No:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(66, 140);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 17);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "Mail:";
-            this.label4.Click += new System.EventHandler(this.label4_Click_1);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(45, 74);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 17);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "Soyadı:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(6, 173);
+            this.label2.Location = new System.Drawing.Point(338, 369);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 17);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "T.C. Kimlik No:";
-            this.label2.Click += new System.EventHandler(this.label2_Click_1);
+            this.label2.Size = new System.Drawing.Size(14, 13);
+            this.label2.TabIndex = 41;
+            this.label2.Text = "0";
+            // 
+            // textBoxCinsiyet
+            // 
+            this.textBoxCinsiyet.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxCinsiyet.FormattingEnabled = true;
+            this.textBoxCinsiyet.Items.AddRange(new object[] {
+            "Bay",
+            "Bayan"});
+            this.textBoxCinsiyet.Location = new System.Drawing.Point(105, 90);
+            this.textBoxCinsiyet.Name = "textBoxCinsiyet";
+            this.textBoxCinsiyet.Size = new System.Drawing.Size(258, 28);
+            this.textBoxCinsiyet.TabIndex = 40;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(68, 41);
+            this.label1.Location = new System.Drawing.Point(45, 95);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 17);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Adı:";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            this.label1.Size = new System.Drawing.Size(58, 17);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "Cinsiyet:";
             // 
-            // maskedTextBox1
+            // btnKaydet
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(105, 102);
-            this.maskedTextBox1.Mask = "(999) 000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(258, 27);
-            this.maskedTextBox1.TabIndex = 1;
-            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
+            this.btnKaydet.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnKaydet.Location = new System.Drawing.Point(176, 359);
+            this.btnKaydet.Name = "btnKaydet";
+            this.btnKaydet.Size = new System.Drawing.Size(95, 30);
+            this.btnKaydet.TabIndex = 38;
+            this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.UseVisualStyleBackColor = true;
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
+            // 
+            // mskdTxtBoxTlfn
+            // 
+            this.mskdTxtBoxTlfn.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.mskdTxtBoxTlfn.Location = new System.Drawing.Point(105, 124);
+            this.mskdTxtBoxTlfn.Mask = "(999) 000-0000";
+            this.mskdTxtBoxTlfn.Name = "mskdTxtBoxTlfn";
+            this.mskdTxtBoxTlfn.Size = new System.Drawing.Size(258, 27);
+            this.mskdTxtBoxTlfn.TabIndex = 1;
+            this.mskdTxtBoxTlfn.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
+            // 
+            // dateCikisTarih
+            // 
+            this.dateCikisTarih.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.dateCikisTarih.Location = new System.Drawing.Point(105, 322);
+            this.dateCikisTarih.Name = "dateCikisTarih";
+            this.dateCikisTarih.Size = new System.Drawing.Size(257, 27);
+            this.dateCikisTarih.TabIndex = 37;
+            this.dateCikisTarih.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
+            // 
+            // dateTimeGiris
+            // 
+            this.dateTimeGiris.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.dateTimeGiris.Location = new System.Drawing.Point(105, 289);
+            this.dateTimeGiris.Name = "dateTimeGiris";
+            this.dateTimeGiris.Size = new System.Drawing.Size(257, 27);
+            this.dateTimeGiris.TabIndex = 36;
+            this.dateTimeGiris.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // textBoxUcret
+            // 
+            this.textBoxUcret.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxUcret.Location = new System.Drawing.Point(105, 256);
+            this.textBoxUcret.Name = "textBoxUcret";
+            this.textBoxUcret.Size = new System.Drawing.Size(257, 27);
+            this.textBoxUcret.TabIndex = 35;
+            this.textBoxUcret.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            // 
+            // textBoxOdaNo
+            // 
+            this.textBoxOdaNo.Enabled = false;
+            this.textBoxOdaNo.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxOdaNo.Location = new System.Drawing.Point(105, 223);
+            this.textBoxOdaNo.Name = "textBoxOdaNo";
+            this.textBoxOdaNo.Size = new System.Drawing.Size(257, 27);
+            this.textBoxOdaNo.TabIndex = 34;
+            this.textBoxOdaNo.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            // 
+            // textBoxTcNo
+            // 
+            this.textBoxTcNo.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxTcNo.Location = new System.Drawing.Point(105, 190);
+            this.textBoxTcNo.MaxLength = 11;
+            this.textBoxTcNo.Name = "textBoxTcNo";
+            this.textBoxTcNo.Size = new System.Drawing.Size(257, 27);
+            this.textBoxTcNo.TabIndex = 33;
+            this.textBoxTcNo.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            // 
+            // textBoxMail
+            // 
+            this.textBoxMail.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxMail.Location = new System.Drawing.Point(105, 157);
+            this.textBoxMail.Name = "textBoxMail";
+            this.textBoxMail.Size = new System.Drawing.Size(257, 27);
+            this.textBoxMail.TabIndex = 32;
+            this.textBoxMail.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // textBoxSoyad
+            // 
+            this.textBoxSoyad.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxSoyad.Location = new System.Drawing.Point(105, 57);
+            this.textBoxSoyad.Name = "textBoxSoyad";
+            this.textBoxSoyad.Size = new System.Drawing.Size(257, 27);
+            this.textBoxSoyad.TabIndex = 30;
+            this.textBoxSoyad.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // labelTlfn
+            // 
+            this.labelTlfn.AutoSize = true;
+            this.labelTlfn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelTlfn.Location = new System.Drawing.Point(45, 129);
+            this.labelTlfn.Name = "labelTlfn";
+            this.labelTlfn.Size = new System.Drawing.Size(54, 17);
+            this.labelTlfn.TabIndex = 29;
+            this.labelTlfn.Text = "Telefon:";
+            this.labelTlfn.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // textBoxAd
+            // 
+            this.textBoxAd.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxAd.Location = new System.Drawing.Point(105, 24);
+            this.textBoxAd.Name = "textBoxAd";
+            this.textBoxAd.Size = new System.Drawing.Size(257, 27);
+            this.textBoxAd.TabIndex = 28;
+            this.textBoxAd.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // labelCikisTrh
+            // 
+            this.labelCikisTrh.AutoSize = true;
+            this.labelCikisTrh.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelCikisTrh.Location = new System.Drawing.Point(22, 329);
+            this.labelCikisTrh.Name = "labelCikisTrh";
+            this.labelCikisTrh.Size = new System.Drawing.Size(74, 17);
+            this.labelCikisTrh.TabIndex = 27;
+            this.labelCikisTrh.Text = "Çıkış Tarihi:";
+            this.labelCikisTrh.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // labelUcret
+            // 
+            this.labelUcret.AutoSize = true;
+            this.labelUcret.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelUcret.Location = new System.Drawing.Point(54, 261);
+            this.labelUcret.Name = "labelUcret";
+            this.labelUcret.Size = new System.Drawing.Size(43, 17);
+            this.labelUcret.TabIndex = 26;
+            this.labelUcret.Text = "Ücret:";
+            this.labelUcret.Click += new System.EventHandler(this.label7_Click_1);
+            // 
+            // labelGirisTrh
+            // 
+            this.labelGirisTrh.AutoSize = true;
+            this.labelGirisTrh.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelGirisTrh.Location = new System.Drawing.Point(23, 296);
+            this.labelGirisTrh.Name = "labelGirisTrh";
+            this.labelGirisTrh.Size = new System.Drawing.Size(73, 17);
+            this.labelGirisTrh.TabIndex = 25;
+            this.labelGirisTrh.Text = "Giriş Tarihi:";
+            this.labelGirisTrh.Click += new System.EventHandler(this.label6_Click_1);
+            // 
+            // labelOdaNo
+            // 
+            this.labelOdaNo.AutoSize = true;
+            this.labelOdaNo.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelOdaNo.Location = new System.Drawing.Point(40, 228);
+            this.labelOdaNo.Name = "labelOdaNo";
+            this.labelOdaNo.Size = new System.Drawing.Size(58, 17);
+            this.labelOdaNo.TabIndex = 24;
+            this.labelOdaNo.Text = "Oda No:";
+            this.labelOdaNo.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // labelMail
+            // 
+            this.labelMail.AutoSize = true;
+            this.labelMail.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelMail.Location = new System.Drawing.Point(66, 162);
+            this.labelMail.Name = "labelMail";
+            this.labelMail.Size = new System.Drawing.Size(36, 17);
+            this.labelMail.TabIndex = 23;
+            this.labelMail.Text = "Mail:";
+            this.labelMail.Click += new System.EventHandler(this.label4_Click_1);
+            // 
+            // labelSoyadı
+            // 
+            this.labelSoyadı.AutoSize = true;
+            this.labelSoyadı.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelSoyadı.Location = new System.Drawing.Point(45, 62);
+            this.labelSoyadı.Name = "labelSoyadı";
+            this.labelSoyadı.Size = new System.Drawing.Size(51, 17);
+            this.labelSoyadı.TabIndex = 22;
+            this.labelSoyadı.Text = "Soyadı:";
+            this.labelSoyadı.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // labelTcNo
+            // 
+            this.labelTcNo.AutoSize = true;
+            this.labelTcNo.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelTcNo.Location = new System.Drawing.Point(6, 195);
+            this.labelTcNo.Name = "labelTcNo";
+            this.labelTcNo.Size = new System.Drawing.Size(93, 17);
+            this.labelTcNo.TabIndex = 21;
+            this.labelTcNo.Text = "T.C. Kimlik No:";
+            this.labelTcNo.Click += new System.EventHandler(this.label2_Click_1);
+            // 
+            // labelAdı
+            // 
+            this.labelAdı.AutoSize = true;
+            this.labelAdı.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelAdı.Location = new System.Drawing.Point(68, 29);
+            this.labelAdı.Name = "labelAdı";
+            this.labelAdı.Size = new System.Drawing.Size(31, 17);
+            this.labelAdı.TabIndex = 20;
+            this.labelAdı.Text = "Adı:";
+            this.labelAdı.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // groupBoxOdalar
             // 
@@ -288,44 +338,46 @@ namespace PansiyonOtomasyon
             this.groupBoxOdalar.Controls.Add(this.btnOda101);
             this.groupBoxOdalar.Location = new System.Drawing.Point(425, 2);
             this.groupBoxOdalar.Name = "groupBoxOdalar";
-            this.groupBoxOdalar.Size = new System.Drawing.Size(392, 381);
+            this.groupBoxOdalar.Size = new System.Drawing.Size(392, 394);
             this.groupBoxOdalar.TabIndex = 1;
             this.groupBoxOdalar.TabStop = false;
             this.groupBoxOdalar.Text = "Odalar";
             // 
-            // btnOda101
+            // btnOda109
             // 
-            this.btnOda101.BackColor = System.Drawing.Color.GreenYellow;
-            this.btnOda101.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOda101.Location = new System.Drawing.Point(28, 78);
-            this.btnOda101.Name = "btnOda101";
-            this.btnOda101.Size = new System.Drawing.Size(75, 35);
-            this.btnOda101.TabIndex = 38;
-            this.btnOda101.Text = "101";
-            this.btnOda101.UseVisualStyleBackColor = false;
-            this.btnOda101.Click += new System.EventHandler(this.btnOda101_Click);
+            this.btnOda109.BackColor = System.Drawing.Color.GreenYellow;
+            this.btnOda109.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOda109.Location = new System.Drawing.Point(282, 256);
+            this.btnOda109.Name = "btnOda109";
+            this.btnOda109.Size = new System.Drawing.Size(75, 35);
+            this.btnOda109.TabIndex = 46;
+            this.btnOda109.Text = "109";
+            this.btnOda109.UseVisualStyleBackColor = false;
+            this.btnOda109.Click += new System.EventHandler(this.btnOda109_Click);
             // 
-            // btnOda102
+            // btnOda108
             // 
-            this.btnOda102.BackColor = System.Drawing.Color.GreenYellow;
-            this.btnOda102.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOda102.Location = new System.Drawing.Point(157, 78);
-            this.btnOda102.Name = "btnOda102";
-            this.btnOda102.Size = new System.Drawing.Size(75, 35);
-            this.btnOda102.TabIndex = 39;
-            this.btnOda102.Text = "102";
-            this.btnOda102.UseVisualStyleBackColor = false;
+            this.btnOda108.BackColor = System.Drawing.Color.GreenYellow;
+            this.btnOda108.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOda108.Location = new System.Drawing.Point(157, 256);
+            this.btnOda108.Name = "btnOda108";
+            this.btnOda108.Size = new System.Drawing.Size(75, 35);
+            this.btnOda108.TabIndex = 45;
+            this.btnOda108.Text = "108";
+            this.btnOda108.UseVisualStyleBackColor = false;
+            this.btnOda108.Click += new System.EventHandler(this.btnOda108_Click);
             // 
-            // btnOda103
+            // btnOda107
             // 
-            this.btnOda103.BackColor = System.Drawing.Color.GreenYellow;
-            this.btnOda103.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOda103.Location = new System.Drawing.Point(282, 78);
-            this.btnOda103.Name = "btnOda103";
-            this.btnOda103.Size = new System.Drawing.Size(75, 35);
-            this.btnOda103.TabIndex = 40;
-            this.btnOda103.Text = "103";
-            this.btnOda103.UseVisualStyleBackColor = false;
+            this.btnOda107.BackColor = System.Drawing.Color.GreenYellow;
+            this.btnOda107.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOda107.Location = new System.Drawing.Point(28, 256);
+            this.btnOda107.Name = "btnOda107";
+            this.btnOda107.Size = new System.Drawing.Size(75, 35);
+            this.btnOda107.TabIndex = 44;
+            this.btnOda107.Text = "107";
+            this.btnOda107.UseVisualStyleBackColor = false;
+            this.btnOda107.Click += new System.EventHandler(this.btnOda107_Click);
             // 
             // btnOda106
             // 
@@ -363,76 +415,71 @@ namespace PansiyonOtomasyon
             this.btnOda104.UseVisualStyleBackColor = false;
             this.btnOda104.Click += new System.EventHandler(this.btnOda104_Click);
             // 
-            // btnOda109
+            // btnOda103
             // 
-            this.btnOda109.BackColor = System.Drawing.Color.GreenYellow;
-            this.btnOda109.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOda109.Location = new System.Drawing.Point(282, 256);
-            this.btnOda109.Name = "btnOda109";
-            this.btnOda109.Size = new System.Drawing.Size(75, 35);
-            this.btnOda109.TabIndex = 46;
-            this.btnOda109.Text = "109";
-            this.btnOda109.UseVisualStyleBackColor = false;
+            this.btnOda103.BackColor = System.Drawing.Color.GreenYellow;
+            this.btnOda103.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOda103.Location = new System.Drawing.Point(282, 78);
+            this.btnOda103.Name = "btnOda103";
+            this.btnOda103.Size = new System.Drawing.Size(75, 35);
+            this.btnOda103.TabIndex = 40;
+            this.btnOda103.Text = "103";
+            this.btnOda103.UseVisualStyleBackColor = false;
+            this.btnOda103.Click += new System.EventHandler(this.btnOda103_Click);
             // 
-            // btnOda108
+            // btnOda102
             // 
-            this.btnOda108.BackColor = System.Drawing.Color.GreenYellow;
-            this.btnOda108.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOda108.Location = new System.Drawing.Point(157, 256);
-            this.btnOda108.Name = "btnOda108";
-            this.btnOda108.Size = new System.Drawing.Size(75, 35);
-            this.btnOda108.TabIndex = 45;
-            this.btnOda108.Text = "108";
-            this.btnOda108.UseVisualStyleBackColor = false;
+            this.btnOda102.BackColor = System.Drawing.Color.GreenYellow;
+            this.btnOda102.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOda102.Location = new System.Drawing.Point(157, 78);
+            this.btnOda102.Name = "btnOda102";
+            this.btnOda102.Size = new System.Drawing.Size(75, 35);
+            this.btnOda102.TabIndex = 39;
+            this.btnOda102.Text = "102";
+            this.btnOda102.UseVisualStyleBackColor = false;
+            this.btnOda102.Click += new System.EventHandler(this.btnOda102_Click);
             // 
-            // btnOda107
+            // btnOda101
             // 
-            this.btnOda107.BackColor = System.Drawing.Color.GreenYellow;
-            this.btnOda107.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOda107.Location = new System.Drawing.Point(28, 256);
-            this.btnOda107.Name = "btnOda107";
-            this.btnOda107.Size = new System.Drawing.Size(75, 35);
-            this.btnOda107.TabIndex = 44;
-            this.btnOda107.Text = "107";
-            this.btnOda107.UseVisualStyleBackColor = false;
+            this.btnOda101.BackColor = System.Drawing.Color.GreenYellow;
+            this.btnOda101.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOda101.Location = new System.Drawing.Point(28, 78);
+            this.btnOda101.Name = "btnOda101";
+            this.btnOda101.Size = new System.Drawing.Size(75, 35);
+            this.btnOda101.TabIndex = 38;
+            this.btnOda101.Text = "101";
+            this.btnOda101.UseVisualStyleBackColor = false;
+            this.btnOda101.Click += new System.EventHandler(this.btnOda101_Click);
             // 
             // btnBOŞ
             // 
             this.btnBOŞ.BackColor = System.Drawing.Color.GreenYellow;
             this.btnBOŞ.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnBOŞ.Location = new System.Drawing.Point(727, 389);
+            this.btnBOŞ.Location = new System.Drawing.Point(728, 403);
             this.btnBOŞ.Name = "btnBOŞ";
             this.btnBOŞ.Size = new System.Drawing.Size(75, 35);
             this.btnBOŞ.TabIndex = 47;
             this.btnBOŞ.Text = "BOŞ";
             this.btnBOŞ.UseVisualStyleBackColor = false;
+            this.btnBOŞ.Click += new System.EventHandler(this.btnBOŞ_Click);
             // 
             // btnDOLU
             // 
             this.btnDOLU.BackColor = System.Drawing.Color.Red;
             this.btnDOLU.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnDOLU.Location = new System.Drawing.Point(635, 389);
+            this.btnDOLU.Location = new System.Drawing.Point(635, 403);
             this.btnDOLU.Name = "btnDOLU";
             this.btnDOLU.Size = new System.Drawing.Size(75, 35);
             this.btnDOLU.TabIndex = 48;
             this.btnDOLU.Text = "DOLU";
             this.btnDOLU.UseVisualStyleBackColor = false;
-            // 
-            // btnKaydet
-            // 
-            this.btnKaydet.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnKaydet.Location = new System.Drawing.Point(176, 337);
-            this.btnKaydet.Name = "btnKaydet";
-            this.btnKaydet.Size = new System.Drawing.Size(95, 30);
-            this.btnKaydet.TabIndex = 38;
-            this.btnKaydet.Text = "Kaydet";
-            this.btnKaydet.UseVisualStyleBackColor = true;
-            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
+            this.btnDOLU.Click += new System.EventHandler(this.btnDOLU_Click);
             // 
             // FormYeniMusteri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(833, 450);
             this.Controls.Add(this.btnDOLU);
@@ -440,6 +487,8 @@ namespace PansiyonOtomasyon
             this.Controls.Add(this.groupBoxOdalar);
             this.Controls.Add(this.groupBoxMusteriBilgi);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormYeniMusteri";
             this.Text = "Yeni Müşteri Ekle";
             this.Load += new System.EventHandler(this.FormYeniMusteri_Load);
@@ -453,24 +502,24 @@ namespace PansiyonOtomasyon
         #endregion
 
         private System.Windows.Forms.GroupBox groupBoxMusteriBilgi;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MaskedTextBox mskdTxtBoxTlfn;
+        private System.Windows.Forms.DateTimePicker dateCikisTarih;
+        private System.Windows.Forms.DateTimePicker dateTimeGiris;
+        private System.Windows.Forms.TextBox textBoxUcret;
+        private System.Windows.Forms.TextBox textBoxOdaNo;
+        private System.Windows.Forms.TextBox textBoxTcNo;
+        private System.Windows.Forms.TextBox textBoxMail;
+        private System.Windows.Forms.TextBox textBoxSoyad;
+        private System.Windows.Forms.Label labelTlfn;
+        private System.Windows.Forms.TextBox textBoxAd;
+        private System.Windows.Forms.Label labelCikisTrh;
+        private System.Windows.Forms.Label labelUcret;
+        private System.Windows.Forms.Label labelGirisTrh;
+        private System.Windows.Forms.Label labelOdaNo;
+        private System.Windows.Forms.Label labelMail;
+        private System.Windows.Forms.Label labelSoyadı;
+        private System.Windows.Forms.Label labelTcNo;
+        private System.Windows.Forms.Label labelAdı;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.GroupBox groupBoxOdalar;
         private System.Windows.Forms.Button btnOda109;
@@ -485,5 +534,8 @@ namespace PansiyonOtomasyon
         private System.Windows.Forms.Button btnBOŞ;
         private System.Windows.Forms.Button btnDOLU;
         private System.Windows.Forms.Button btnKaydet;
+        private System.Windows.Forms.ComboBox textBoxCinsiyet;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

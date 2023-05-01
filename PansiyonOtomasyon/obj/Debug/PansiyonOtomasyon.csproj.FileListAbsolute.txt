@@ -9,3 +9,17 @@ C:\Users\berka\source\repos\PansiyonOtomasyon\PansiyonOtomasyon\obj\Debug\Pansiy
 C:\Users\berka\source\repos\PansiyonOtomasyon\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.exe
 C:\Users\berka\source\repos\PansiyonOtomasyon\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.pdb
 C:\Users\berka\source\repos\PansiyonOtomasyon\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.FormYeniMusteri.resources
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\bin\Debug\PansiyonOtomasyon.exe.config
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\bin\Debug\PansiyonOtomasyon.exe
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\bin\Debug\PansiyonOtomasyon.pdb
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.csproj.AssemblyReference.cache
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.FormYeniMusteri.resources
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.Properties.Resources.resources
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.csproj.GenerateResource.cache
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.csproj.CoreCompileInputs.cache
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.exe
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.pdb
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.AnaSayfaForm.resources
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.AdminGiriş.resources
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.FormOdalar.resources
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.FormMusteriler.resources

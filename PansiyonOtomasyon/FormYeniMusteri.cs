@@ -10,7 +10,7 @@ using System.Windows.Forms;
 // SQL Bağlantısı için gerekli kütüphaneler.
 using System.Data.Sql;
 using System.Data.SqlClient;
-
+// SQL Bağlantısı için gerekli kütüphaneler.
 namespace PansiyonOtomasyon
 {
     public partial class FormYeniMusteri : Form
@@ -64,6 +64,8 @@ namespace PansiyonOtomasyon
             if (btnOda101.Text != "101")
             {
                 btnOda101.BackColor = Color.Red;
+                btnOda101.Enabled = false;
+
 
             }
             // ------     Oda 102    -----------
@@ -81,6 +83,7 @@ namespace PansiyonOtomasyon
             if (btnOda102.Text != "102")
             {
                 btnOda102.BackColor = Color.Red;
+                btnOda102.Enabled = false;
 
             }
 
@@ -99,6 +102,7 @@ namespace PansiyonOtomasyon
             if (btnOda103.Text != "103")
             {
                 btnOda103.BackColor = Color.Red;
+                btnOda103.Enabled = false;
 
             }
 
@@ -117,6 +121,7 @@ namespace PansiyonOtomasyon
             if (btnOda104.Text != "104")
             {
                 btnOda104.BackColor = Color.Red;
+                btnOda104.Enabled = false;
 
             }
 
@@ -135,6 +140,7 @@ namespace PansiyonOtomasyon
             if (btnOda105.Text != "105")
             {
                 btnOda105.BackColor = Color.Red;
+                btnOda105.Enabled = false;
 
             }
 
@@ -153,6 +159,7 @@ namespace PansiyonOtomasyon
             if (btnOda106.Text != "106")
             {
                 btnOda106.BackColor = Color.Red;
+                btnOda106.Enabled = false;
 
             }
 
@@ -171,6 +178,7 @@ namespace PansiyonOtomasyon
             if (btnOda107.Text != "107")
             {
                 btnOda107.BackColor = Color.Red;
+                btnOda107.Enabled = false;
 
             }
             // ------     Oda 108   -----------
@@ -188,6 +196,7 @@ namespace PansiyonOtomasyon
             if (btnOda108.Text != "108")
             {
                 btnOda108.BackColor = Color.Red;
+                btnOda108.Enabled = false;
 
             }
 
@@ -206,6 +215,7 @@ namespace PansiyonOtomasyon
             if (btnOda109.Text != "109")
             {
                 btnOda109.BackColor = Color.Red;
+                btnOda109.Enabled = false;
 
             }
         }
@@ -213,16 +223,28 @@ namespace PansiyonOtomasyon
         private void btnOda106_Click(object sender, EventArgs e)
         {
             textBoxOdaNo.Text = "106";
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Oda106 (Adi,Soyadi) values ('" + textBoxAd.Text + "', '" + textBoxSoyad.Text + "')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
         }
 
         private void btnOda105_Click(object sender, EventArgs e)
         {
             textBoxOdaNo.Text = "105";
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Oda105 (Adi,Soyadi) values ('" + textBoxAd.Text + "', '" + textBoxSoyad.Text + "')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
         }
 
         private void btnOda104_Click(object sender, EventArgs e)
         {
             textBoxOdaNo.Text = "104";
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Oda104 (Adi,Soyadi) values ('" + textBoxAd.Text + "', '" + textBoxSoyad.Text + "')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
         }
 
         private void btnKaydet_Click(object sender, EventArgs e)
@@ -342,31 +364,55 @@ namespace PansiyonOtomasyon
         private void btnOda101_Click(object sender, EventArgs e)
         {
             textBoxOdaNo.Text = "101";
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Oda101 (Adi,Soyadi) values ('" + textBoxAd.Text + "', '" +textBoxSoyad.Text+"')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
         }
 
         private void btnOda102_Click(object sender, EventArgs e)
         {
             textBoxOdaNo.Text = "102";
+            baglanti.Open();
+            SqlCommand komut2 = new SqlCommand("insert into Oda102 (Adi,Soyadi) values ('" + textBoxAd.Text + "', '" + textBoxSoyad.Text + "')", baglanti);
+            komut2.ExecuteNonQuery();
+            baglanti.Close();
         }
 
         private void btnOda103_Click(object sender, EventArgs e)
         {
             textBoxOdaNo.Text = "103";
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Oda103 (Adi,Soyadi) values ('" + textBoxAd.Text + "', '" + textBoxSoyad.Text + "')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
         }
 
         private void btnOda107_Click(object sender, EventArgs e)
         {
             textBoxOdaNo.Text = "107";
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Oda107 (Adi,Soyadi) values ('" + textBoxAd.Text + "', '" + textBoxSoyad.Text + "')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
         }
 
         private void btnOda108_Click(object sender, EventArgs e)
         {
             textBoxOdaNo.Text = "108";
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Oda108 (Adi,Soyadi) values ('" + textBoxAd.Text + "', '" + textBoxSoyad.Text + "')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
         }
 
         private void btnOda109_Click(object sender, EventArgs e)
         {
             textBoxOdaNo.Text = "109";
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Oda109 (Adi,Soyadi) values ('" + textBoxAd.Text + "', '" + textBoxSoyad.Text + "')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
         }
 
         private void btnDOLU_Click(object sender, EventArgs e)

@@ -156,6 +156,7 @@ namespace PansiyonOtomasyon
             this.Controls.Add(this.btnOda101);
             this.Name = "FormOdalar";
             this.Text = "Odalar";
+            this.Load += new System.EventHandler(this.FormOdalar_Load);
             this.ResumeLayout(false);
 
         }

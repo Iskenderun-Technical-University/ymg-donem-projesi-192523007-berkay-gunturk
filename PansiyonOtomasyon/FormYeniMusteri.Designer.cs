@@ -99,6 +99,7 @@ namespace PansiyonOtomasyon
             this.groupBoxMusteriBilgi.TabIndex = 0;
             this.groupBoxMusteriBilgi.TabStop = false;
             this.groupBoxMusteriBilgi.Text = "Müşteri Bilgileri";
+            this.groupBoxMusteriBilgi.Enter += new System.EventHandler(this.groupBoxMusteriBilgi_Enter);
             // 
             // label2
             // 
@@ -108,6 +109,7 @@ namespace PansiyonOtomasyon
             this.label2.Size = new System.Drawing.Size(14, 13);
             this.label2.TabIndex = 41;
             this.label2.Text = "0";
+            this.label2.Visible = false;
             // 
             // textBoxCinsiyet
             // 
@@ -342,6 +344,7 @@ namespace PansiyonOtomasyon
             this.groupBoxOdalar.TabIndex = 1;
             this.groupBoxOdalar.TabStop = false;
             this.groupBoxOdalar.Text = "Odalar";
+            this.groupBoxOdalar.Enter += new System.EventHandler(this.groupBoxOdalar_Enter);
             // 
             // btnOda109
             // 

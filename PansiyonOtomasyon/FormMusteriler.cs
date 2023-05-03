@@ -88,8 +88,8 @@ namespace PansiyonOtomasyon
         {
             baglanti.Open(); //veritabanından işlem yapmak için öncellikle bağlantıyı açıyorum. !!!!!!!!!!!! tek tırnak ile aç çift tırnak ile kapa !!!!!! 
             SqlCommand komut = new SqlCommand("update MusteriEkle set Adi = '" +textBoxAd.Text+ "', Soyadi = '"+textBoxSoyad.Text+"', Cinsiyet = '"+textBoxCinsiyet.Text+"', Telefon = '"+mskdTxtBoxTlfn.Text+"', Mail='"+textBoxMail.Text+"', TC= '"+textBoxTcNo.Text+"', OdaNo= '"+textBoxOdaNo.Text+"', Ucret='"+textBoxUcret.Text+ "', GirisTarihi= '"+dateTimeGiris.Value.ToString("yyyy - MM - dd")+"', CikisTarihi = '"+ dateCikisTarih.Value.ToString("yyyy-MM-dd")+"' where Musteriid= " +id+"", baglanti);
-            komut.ExecuteNonQuery();
-            baglanti.Close();
+            komut.ExecuteNonQuery(); // yaptığım komutu kaydettim.
+            baglanti.Close(); // veritabanında komutumu yazdıktan sonra baglantimi kestim.
             verileriGoster();
 
             
@@ -121,7 +121,40 @@ namespace PansiyonOtomasyon
 
 
         }
+
+        private void btnAra_Click(object sender, EventArgs e)
+        {
+
+            listView1.Items.Clear(); // Her listeleme işleminde önceki işlemi temizleme komutu !
+
+            baglanti.Open(); // verileri göstermek için öncellikle baglantiyi açtım 
+            SqlCommand komut = new SqlCommand("select*from MusteriEkle where Adi like '%" + textBox1.Text + "'", baglanti);
+
+            SqlDataReader oku = komut.ExecuteReader();
+
+            while (oku.Read()) // tüm verileri okutuyoruz..
+            {
+                ListViewItem ekle = new ListViewItem();
+                ekle.Text = oku["Musteriid"].ToString();
+                ekle.SubItems.Add(oku["Adi"].ToString());
+                ekle.SubItems.Add(oku["Soyadi"].ToString());
+                ekle.SubItems.Add(oku["Cinsiyet"].ToString());
+                ekle.SubItems.Add(oku["Telefon"].ToString());
+                ekle.SubItems.Add(oku["Mail"].ToString());
+                ekle.SubItems.Add(oku["TC"].ToString());
+                ekle.SubItems.Add(oku["OdaNo"].ToString());
+                ekle.SubItems.Add(oku["Ucret"].ToString());
+                ekle.SubItems.Add(oku["GirisTarihi"].ToString());
+                ekle.SubItems.Add(oku["CikisTarihi"].ToString());
+
+                listView1.Items.Add(ekle);
+            }
+
+            baglanti.Close(); // SQL baglantisini kapattık.
+        }
+
     }
-}
+    }
+
 
 //Data Source=DESKTOP-5U8T0LG\SQLEXPRESS;Initial Catalog=Pansiyon;Integrated Security=True baglantiSQL

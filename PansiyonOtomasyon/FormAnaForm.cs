@@ -43,5 +43,16 @@ namespace PansiyonOtomasyon
             fr.Show();
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Türkiyenin En Kaliteli Pansiyon Uygulaması");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormOdalar fr = new FormOdalar();
+            fr.Show();
+        }
     }
 }

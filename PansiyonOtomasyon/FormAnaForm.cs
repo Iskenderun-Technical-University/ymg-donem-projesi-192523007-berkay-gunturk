@@ -39,7 +39,7 @@ namespace PansiyonOtomasyon
 
         private void btnMusteriler_Click(object sender, EventArgs e)
         {
-            FormMusteriler fr = new FormMusteriler();
+            BtnVerileriGoster fr = new BtnVerileriGoster();
             fr.Show();
 
         }

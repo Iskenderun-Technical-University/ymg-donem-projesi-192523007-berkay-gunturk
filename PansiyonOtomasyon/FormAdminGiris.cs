@@ -39,6 +39,7 @@ namespace PansiyonOtomasyon
                 AnaSayfaForm fr = new AnaSayfaForm();
                 fr.Show();
                 this.Hide();
+                MessageBox.Show("Başarıyla Giriş Yapıldı.");
             }
 
             else

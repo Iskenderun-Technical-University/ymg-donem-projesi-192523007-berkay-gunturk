@@ -22,4 +22,4 @@ C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonO
 C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.AnaSayfaForm.resources
 C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.AdminGiriş.resources
 C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.FormOdalar.resources
-C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.FormMusteriler.resources
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.BtnVerileriGoster.resources

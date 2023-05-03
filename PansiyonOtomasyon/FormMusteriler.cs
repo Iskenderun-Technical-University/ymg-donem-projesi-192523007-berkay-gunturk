@@ -12,9 +12,9 @@ using System.Data.SqlClient;
 
 namespace PansiyonOtomasyon
 {
-    public partial class FormMusteriler : Form
+    public partial class BtnVerileriGoster : Form
     {
-        public FormMusteriler()
+        public BtnVerileriGoster()
         {
             InitializeComponent();
         }
@@ -23,6 +23,8 @@ namespace PansiyonOtomasyon
 
         private void verileriGoster() //Verileri Göstermek için kurulan fonksiyon
         {
+            listView1.Items.Clear(); // Her listeleme işleminde önceki işlemi temizleme komutu !
+           
             baglanti.Open(); // verileri göstermek için öncellikle baglantiyi açtım 
             SqlCommand komut = new SqlCommand("select*from MusteriEkle", baglanti);
             SqlDataReader oku = komut.ExecuteReader();
@@ -51,6 +53,73 @@ namespace PansiyonOtomasyon
         private void button1_Click(object sender, EventArgs e)
         {
             verileriGoster();
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxOdaNo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        // verileri göster listesinden --id-- sine çift tıklama ile müşteri özellikleri doldurma
+        int id = 0; 
+        private void listView1_DoubleClick(object sender, EventArgs e)
+        {
+
+            id = int.Parse(listView1.SelectedItems[0].SubItems[0].Text); // KÖK DÜĞÜM için. id=id sağlamasını yaptık.
+            textBoxAd.Text=(listView1.SelectedItems[0].SubItems[1].Text);
+            textBoxSoyad.Text = (listView1.SelectedItems[0].SubItems[2].Text);
+            textBoxCinsiyet.Text = listView1.SelectedItems[0].SubItems[3].Text;
+            mskdTxtBoxTlfn.Text = listView1.SelectedItems[0].SubItems[4].Text;
+            textBoxMail.Text = listView1.SelectedItems[0].SubItems[5].Text;
+            textBoxTcNo.Text = listView1.SelectedItems[0].SubItems[6].Text;
+            textBoxOdaNo.Text = listView1.SelectedItems[0].SubItems[7].Text;
+            textBoxUcret.Text = listView1.SelectedItems[0].SubItems[8].Text;
+            dateTimeGiris.Text = listView1.SelectedItems[0].SubItems[9].Text;
+            dateCikisTarih.Text = listView1.SelectedItems[0].SubItems[10].Text;
+
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            baglanti.Open(); //veritabanından işlem yapmak için öncellikle bağlantıyı açıyorum. !!!!!!!!!!!! tek tırnak ile aç çift tırnak ile kapa !!!!!! 
+            SqlCommand komut = new SqlCommand("update MusteriEkle set Adi = '" +textBoxAd.Text+ "', Soyadi = '"+textBoxSoyad.Text+"', Cinsiyet = '"+textBoxCinsiyet.Text+"', Telefon = '"+mskdTxtBoxTlfn.Text+"', Mail='"+textBoxMail.Text+"', TC= '"+textBoxTcNo.Text+"', OdaNo= '"+textBoxOdaNo.Text+"', Ucret='"+textBoxUcret.Text+ "', GirisTarihi= '"+dateTimeGiris.Value.ToString("yyyy - MM - dd")+"', CikisTarihi = '"+ dateCikisTarih.Value.ToString("yyyy-MM-dd")+"' where Musteriid= " +id+"", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+            verileriGoster();
+
+            
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            baglanti.Open(); // veritabanından işlem yapmak için öncellikle bağlantıyı açıyorum.
+            SqlCommand komut = new SqlCommand("delete from MusteriEkle where Musteriid=(" + id + ")", baglanti); // SQL sorgum silme işlemi
+            komut.ExecuteNonQuery();// yaptığım komutu kaydettim
+            baglanti.Close(); // veritabanında komutumu yazdıktan sonra baglantimi kestim.
+            verileriGoster();
+            
+        }
+
+        private void btnTemizle_Click(object sender, EventArgs e)
+        {
+            textBoxAd.Clear();
+            textBoxSoyad.Clear();
+            textBoxCinsiyet.Text = "";
+            textBoxMail.Clear();
+            textBoxOdaNo.Clear();
+            textBoxTcNo.Clear();
+            textBoxUcret.Clear();
+            dateTimeGiris.Text = "";
+            dateCikisTarih.Text = "";
+
+
+
+
         }
     }
 }

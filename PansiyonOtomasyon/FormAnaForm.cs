@@ -19,7 +19,7 @@ namespace PansiyonOtomasyon
 
         private void AnaSayfaForm_Load(object sender, EventArgs e)
         {
-
+            timer1.Start();
         }
 
         private void btnAdminGiris_Click(object sender, EventArgs e)
@@ -53,6 +53,32 @@ namespace PansiyonOtomasyon
         {
             FormOdalar fr = new FormOdalar();
             fr.Show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            textTarih.Text = DateTime.Now.ToLongDateString();
+            textTime.Text = DateTime.Now.ToLongTimeString();
+        }
+
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnGelirGider_Click(object sender, EventArgs e)
+        {
+            FormGelirGider fr = new FormGelirGider();
+            fr.Show();
+            this.Hide();
+        }
+
+        private void btnStoklar_Click(object sender, EventArgs e)
+        {
+            FormStoklar fr = new FormStoklar();
+            fr.Show();
+            
+
         }
     }
 }

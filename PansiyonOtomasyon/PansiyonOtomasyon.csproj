@@ -58,6 +58,12 @@
     <Compile Include="FormAnaForm.Designer.cs">
       <DependentUpon>FormAnaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormGelirGider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGelirGider.Designer.cs">
+      <DependentUpon>FormGelirGider.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMusteriler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,12 @@
     </Compile>
     <Compile Include="FormOdalar.Designer.cs">
       <DependentUpon>FormOdalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStoklar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStoklar.Designer.cs">
+      <DependentUpon>FormStoklar.cs</DependentUpon>
     </Compile>
     <Compile Include="FormYeniMusteri.cs">
       <SubType>Form</SubType>
@@ -84,11 +96,17 @@
     <EmbeddedResource Include="FormAnaForm.resx">
       <DependentUpon>FormAnaForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormGelirGider.resx">
+      <DependentUpon>FormGelirGider.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMusteriler.resx">
       <DependentUpon>FormMusteriler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormOdalar.resx">
       <DependentUpon>FormOdalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStoklar.resx">
+      <DependentUpon>FormStoklar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormYeniMusteri.resx">
       <DependentUpon>FormYeniMusteri.cs</DependentUpon>

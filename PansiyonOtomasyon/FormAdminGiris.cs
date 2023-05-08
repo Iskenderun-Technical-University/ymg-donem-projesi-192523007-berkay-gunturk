@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Data.Sql; //SQL baglantisi için gerekli kütüphane 1
+using System.Data.SqlClient; //SQL baglantisi için gerekli kütüphane 2
 namespace PansiyonOtomasyon
 {
     public partial class AdminGiriş : Form
@@ -31,21 +33,36 @@ namespace PansiyonOtomasyon
         {
 
         }
+        //Sql baglantımın linki..
+        SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-5U8T0LG\SQLEXPRESS;Initial Catalog=Pansiyon;Integrated Security=True");
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBoxKullaniciAdi.Text == "admin" && textBoxSifre.Text == "12345")
+            baglanti.Open(); //SQL baglantisini açtım
+
+            // Sql komutu ile datebase'de kullanıcıAdı ve Şifre 'nin doğrunun kontrollerini sağladım.
+            SqlCommand komut = new SqlCommand("select * from AdminGiris where KullaniciAdi = '" + textBoxKullaniciAdi.Text + "' and Sifre = '" + textBoxSifre.Text + "'", baglanti);
+            
+            
+            SqlDataReader dr = komut.ExecuteReader();// Okuduüum değerleri döndürdüm
+
+            if (dr.Read()) // if else yapısı ile doğru ise giriş, yanlış ise hata vermesini sağlayıp giriş izninin engelledim.
             {
                 AnaSayfaForm fr = new AnaSayfaForm();
                 fr.Show();
                 this.Hide();
-                MessageBox.Show("Başarıyla Giriş Yapıldı.");
-            }
+                MessageBox.Show("Başarıyla Giriş Yaptınız");
 
+
+            }
             else
             {
-                MessageBox.Show("Kullanıcı adı veya şifre hatalı");
+                MessageBox.Show("Kullanıcı Adı Veya Şifre Hatalı !");
             }
+
+            baglanti.Close();
+
+
         }
 
         private void label3_Click(object sender, EventArgs e)

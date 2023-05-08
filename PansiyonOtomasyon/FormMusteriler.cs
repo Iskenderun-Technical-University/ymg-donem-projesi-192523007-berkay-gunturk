@@ -97,12 +97,101 @@ namespace PansiyonOtomasyon
 
         private void btnSil_Click(object sender, EventArgs e)
         {
-            baglanti.Open(); // veritabanından işlem yapmak için öncellikle bağlantıyı açıyorum.
-            SqlCommand komut = new SqlCommand("delete from MusteriEkle where Musteriid=(" + id + ")", baglanti); // SQL sorgum silme işlemi
-            komut.ExecuteNonQuery();// yaptığım komutu kaydettim
-            baglanti.Close(); // veritabanında komutumu yazdıktan sonra baglantimi kestim.
-            verileriGoster();
-            
+            // -------- ODA 101 -------------
+            if (textBoxOdaNo.Text == "101") 
+            {
+
+                baglanti.Open(); // veritabanından işlem yapmak için öncellikle bağlantıyı açıyorum.
+                SqlCommand komut = new SqlCommand("delete from Oda101", baglanti); // SQL sorgum silme işlemi
+                komut.ExecuteNonQuery();// yaptığım komutu kaydettim
+                baglanti.Close(); // veritabanında komutumu yazdıktan sonra baglantimi kestim.
+                verileriGoster();
+            }
+
+            // -------- ODA 102 -------------
+            if (textBoxOdaNo.Text == "102") 
+            {
+
+                baglanti.Open(); // veritabanından işlem yapmak için öncellikle bağlantıyı açıyorum.
+                SqlCommand komut = new SqlCommand("delete from Oda102", baglanti); // SQL sorgum silme işlemi
+                komut.ExecuteNonQuery();// yaptığım komutu kaydettim
+                baglanti.Close(); // veritabanında komutumu yazdıktan sonra baglantimi kestim.
+                verileriGoster();
+            }
+            // -------- ODA 103 -------------
+            if (textBoxOdaNo.Text == "103") 
+            {
+
+                baglanti.Open(); // veritabanından işlem yapmak için öncellikle bağlantıyı açıyorum.
+                SqlCommand komut = new SqlCommand("delete from Oda103", baglanti); // SQL sorgum silme işlemi
+                komut.ExecuteNonQuery();// yaptığım komutu kaydettim
+                baglanti.Close(); // veritabanında komutumu yazdıktan sonra baglantimi kestim.
+                verileriGoster();
+            }
+            // -------- ODA 104 -------------
+            if (textBoxOdaNo.Text == "104") 
+            {
+
+                baglanti.Open(); // veritabanından işlem yapmak için öncellikle bağlantıyı açıyorum.
+                SqlCommand komut = new SqlCommand("delete from Oda104", baglanti); // SQL sorgum silme işlemi
+                komut.ExecuteNonQuery();// yaptığım komutu kaydettim
+                baglanti.Close(); // veritabanında komutumu yazdıktan sonra baglantimi kestim.
+                verileriGoster();
+            }
+            // -------- ODA 105 -------------
+            if (textBoxOdaNo.Text == "105")
+            {
+
+                baglanti.Open(); // veritabanından işlem yapmak için öncellikle bağlantıyı açıyorum.
+                SqlCommand komut = new SqlCommand("delete from Oda105", baglanti); // SQL sorgum silme işlemi
+                komut.ExecuteNonQuery();// yaptığım komutu kaydettim
+                baglanti.Close(); // veritabanında komutumu yazdıktan sonra baglantimi kestim.
+                verileriGoster();
+            }
+            // -------- ODA 106 -------------
+            if (textBoxOdaNo.Text == "106") 
+            {
+
+                baglanti.Open(); // veritabanından işlem yapmak için öncellikle bağlantıyı açıyorum.
+                SqlCommand komut = new SqlCommand("delete from Oda106", baglanti); // SQL sorgum silme işlemi
+                komut.ExecuteNonQuery();// yaptığım komutu kaydettim
+                baglanti.Close(); // veritabanında komutumu yazdıktan sonra baglantimi kestim.
+                verileriGoster();
+            }
+            // -------- ODA 107 -------------
+            if (textBoxOdaNo.Text == "107")
+            {
+
+                baglanti.Open(); // veritabanından işlem yapmak için öncellikle bağlantıyı açıyorum.
+                SqlCommand komut = new SqlCommand("delete from Oda107", baglanti); // SQL sorgum silme işlemi
+                komut.ExecuteNonQuery();// yaptığım komutu kaydettim
+                baglanti.Close(); // veritabanında komutumu yazdıktan sonra baglantimi kestim.
+                verileriGoster();
+            }
+            // -------- ODA 108 -------------
+            if (textBoxOdaNo.Text == "108")
+            {
+
+                baglanti.Open(); // veritabanından işlem yapmak için öncellikle bağlantıyı açıyorum.
+                SqlCommand komut = new SqlCommand("delete from Oda108", baglanti); // SQL sorgum silme işlemi
+                komut.ExecuteNonQuery();// yaptığım komutu kaydettim
+                baglanti.Close(); // veritabanında komutumu yazdıktan sonra baglantimi kestim.
+                verileriGoster();
+            }
+            // -------- ODA 109 -------------
+            if (textBoxOdaNo.Text == "109")
+            {
+
+                baglanti.Open(); // veritabanından işlem yapmak için öncellikle bağlantıyı açıyorum.
+                SqlCommand komut = new SqlCommand("delete from Oda109", baglanti); // SQL sorgum silme işlemi
+                komut.ExecuteNonQuery();// yaptığım komutu kaydettim
+                baglanti.Close(); // veritabanında komutumu yazdıktan sonra baglantimi kestim.
+                verileriGoster();
+            }
+
+
+
+
         }
 
         private void btnTemizle_Click(object sender, EventArgs e)
@@ -158,3 +247,4 @@ namespace PansiyonOtomasyon
 
 
 //Data Source=DESKTOP-5U8T0LG\SQLEXPRESS;Initial Catalog=Pansiyon;Integrated Security=True baglantiSQL
+//SqlCommand komut = new SqlCommand("delete from MusteriEkle where Musteriid=(" + id + ")", baglanti); // SQL sorgum silme işlemi

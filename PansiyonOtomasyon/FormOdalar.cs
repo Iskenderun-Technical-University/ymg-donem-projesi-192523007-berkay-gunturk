@@ -44,12 +44,12 @@ namespace PansiyonOtomasyon
             // ------     Oda 102    -----------
             baglanti.Open();
             SqlCommand komut2 = new SqlCommand("Select * from Oda102 ", baglanti);
-            SqlDataReader oku2 = komut1.ExecuteReader();
+            SqlDataReader oku2 = komut2.ExecuteReader();
 
             while (oku2.Read())
             {
 
-                btnOda101.Text = oku2["Adi"].ToString() + " " + oku2["Soyadi"].ToString();
+                btnOda102.Text = oku2["Adi"].ToString() + " " + oku2["Soyadi"].ToString();
 
             }
             baglanti.Close();
@@ -183,6 +183,11 @@ namespace PansiyonOtomasyon
                 btnOda109.BackColor = Color.Red;
 
             }
+        }
+
+        private void btnOda101_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

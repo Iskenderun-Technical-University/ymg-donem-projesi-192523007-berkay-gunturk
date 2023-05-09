@@ -138,6 +138,7 @@ namespace PansiyonOtomasyon
             this.btnOda101.TabIndex = 47;
             this.btnOda101.Text = "101";
             this.btnOda101.UseVisualStyleBackColor = false;
+            this.btnOda101.Click += new System.EventHandler(this.btnOda101_Click);
             // 
             // FormOdalar
             // 

@@ -39,10 +39,14 @@ namespace PansiyonOtomasyon
             this.label6 = new System.Windows.Forms.Label();
             this.lblKasaToplam = new System.Windows.Forms.Label();
             this.lblPersonelMaas = new System.Windows.Forms.Label();
-            this.lblFaturalar = new System.Windows.Forms.Label();
+            this.lblFaturalar1 = new System.Windows.Forms.Label();
             this.lblAlinanUrunler = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.lblSonuc = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblFaturalar2 = new System.Windows.Forms.Label();
+            this.lblFaturalar3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -106,7 +110,7 @@ namespace PansiyonOtomasyon
             // btnHesapla
             // 
             this.btnHesapla.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnHesapla.Location = new System.Drawing.Point(358, 199);
+            this.btnHesapla.Location = new System.Drawing.Point(357, 327);
             this.btnHesapla.Name = "btnHesapla";
             this.btnHesapla.Size = new System.Drawing.Size(201, 29);
             this.btnHesapla.TabIndex = 7;
@@ -145,15 +149,15 @@ namespace PansiyonOtomasyon
             this.lblPersonelMaas.TabIndex = 10;
             this.lblPersonelMaas.Text = "00";
             // 
-            // lblFaturalar
+            // lblFaturalar1
             // 
-            this.lblFaturalar.AutoSize = true;
-            this.lblFaturalar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblFaturalar.Location = new System.Drawing.Point(185, 203);
-            this.lblFaturalar.Name = "lblFaturalar";
-            this.lblFaturalar.Size = new System.Drawing.Size(25, 19);
-            this.lblFaturalar.TabIndex = 12;
-            this.lblFaturalar.Text = "00";
+            this.lblFaturalar1.AutoSize = true;
+            this.lblFaturalar1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblFaturalar1.Location = new System.Drawing.Point(185, 203);
+            this.lblFaturalar1.Name = "lblFaturalar1";
+            this.lblFaturalar1.Size = new System.Drawing.Size(25, 19);
+            this.lblFaturalar1.TabIndex = 12;
+            this.lblFaturalar1.Text = "00";
             // 
             // lblAlinanUrunler
             // 
@@ -164,6 +168,7 @@ namespace PansiyonOtomasyon
             this.lblAlinanUrunler.Size = new System.Drawing.Size(25, 19);
             this.lblAlinanUrunler.TabIndex = 11;
             this.lblAlinanUrunler.Text = "00";
+            this.lblAlinanUrunler.Click += new System.EventHandler(this.lblAlinanUrunler_Click);
             // 
             // label11
             // 
@@ -184,6 +189,47 @@ namespace PansiyonOtomasyon
             this.lblSonuc.Size = new System.Drawing.Size(25, 19);
             this.lblSonuc.TabIndex = 14;
             this.lblSonuc.Text = "00";
+            this.lblSonuc.Click += new System.EventHandler(this.lblSonuc_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(248, 149);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(25, 19);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "00";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.Location = new System.Drawing.Point(308, 149);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(25, 19);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "00";
+            // 
+            // lblFaturalar2
+            // 
+            this.lblFaturalar2.AutoSize = true;
+            this.lblFaturalar2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblFaturalar2.Location = new System.Drawing.Point(248, 203);
+            this.lblFaturalar2.Name = "lblFaturalar2";
+            this.lblFaturalar2.Size = new System.Drawing.Size(25, 19);
+            this.lblFaturalar2.TabIndex = 17;
+            this.lblFaturalar2.Text = "00";
+            // 
+            // lblFaturalar3
+            // 
+            this.lblFaturalar3.AutoSize = true;
+            this.lblFaturalar3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblFaturalar3.Location = new System.Drawing.Point(308, 203);
+            this.lblFaturalar3.Name = "lblFaturalar3";
+            this.lblFaturalar3.Size = new System.Drawing.Size(25, 19);
+            this.lblFaturalar3.TabIndex = 18;
+            this.lblFaturalar3.Text = "00";
             // 
             // FormGelirGider
             // 
@@ -191,9 +237,13 @@ namespace PansiyonOtomasyon
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(589, 450);
+            this.Controls.Add(this.lblFaturalar3);
+            this.Controls.Add(this.lblFaturalar2);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.lblSonuc);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.lblFaturalar);
+            this.Controls.Add(this.lblFaturalar1);
             this.Controls.Add(this.lblAlinanUrunler);
             this.Controls.Add(this.lblPersonelMaas);
             this.Controls.Add(this.lblKasaToplam);
@@ -224,9 +274,13 @@ namespace PansiyonOtomasyon
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblKasaToplam;
         private System.Windows.Forms.Label lblPersonelMaas;
-        private System.Windows.Forms.Label lblFaturalar;
+        private System.Windows.Forms.Label lblFaturalar1;
         private System.Windows.Forms.Label lblAlinanUrunler;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblSonuc;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblFaturalar2;
+        private System.Windows.Forms.Label lblFaturalar3;
     }
 }

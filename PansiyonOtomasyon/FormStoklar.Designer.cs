@@ -1,7 +1,7 @@
 ﻿
 namespace PansiyonOtomasyon
 {
-    partial class FormStoklar
+    partial class FormGiderler
     {
         /// <summary>
         /// Required designer variable.
@@ -46,13 +46,13 @@ namespace PansiyonOtomasyon
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnKaydet2 = new System.Windows.Forms.Button();
-            this.textBoxElektrik = new System.Windows.Forms.TextBox();
-            this.textBoxInternet = new System.Windows.Forms.TextBox();
             this.labelElektrik = new System.Windows.Forms.Label();
-            this.textBoxSu = new System.Windows.Forms.TextBox();
-            this.labelSu = new System.Windows.Forms.Label();
+            this.btnKaydet2 = new System.Windows.Forms.Button();
             this.labelInternet = new System.Windows.Forms.Label();
+            this.textBoxElektrik = new System.Windows.Forms.TextBox();
+            this.labelSu = new System.Windows.Forms.Label();
+            this.textBoxInternet = new System.Windows.Forms.TextBox();
+            this.textBoxSu = new System.Windows.Forms.TextBox();
             this.groupBoxMutfak.SuspendLayout();
             this.groupBoxFaturalar.SuspendLayout();
             this.SuspendLayout();
@@ -218,6 +218,16 @@ namespace PansiyonOtomasyon
             this.columnHeader6.Text = "İnternet";
             this.columnHeader6.Width = 133;
             // 
+            // labelElektrik
+            // 
+            this.labelElektrik.AutoSize = true;
+            this.labelElektrik.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelElektrik.Location = new System.Drawing.Point(72, 53);
+            this.labelElektrik.Name = "labelElektrik";
+            this.labelElektrik.Size = new System.Drawing.Size(59, 17);
+            this.labelElektrik.TabIndex = 8;
+            this.labelElektrik.Text = "Elektrik:";
+            // 
             // btnKaydet2
             // 
             this.btnKaydet2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -229,6 +239,16 @@ namespace PansiyonOtomasyon
             this.btnKaydet2.UseVisualStyleBackColor = true;
             this.btnKaydet2.Click += new System.EventHandler(this.btnKaydet2_Click);
             // 
+            // labelInternet
+            // 
+            this.labelInternet.AutoSize = true;
+            this.labelInternet.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelInternet.Location = new System.Drawing.Point(70, 114);
+            this.labelInternet.Name = "labelInternet";
+            this.labelInternet.Size = new System.Drawing.Size(61, 17);
+            this.labelInternet.TabIndex = 10;
+            this.labelInternet.Text = "İnternet:";
+            // 
             // textBoxElektrik
             // 
             this.textBoxElektrik.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -236,32 +256,6 @@ namespace PansiyonOtomasyon
             this.textBoxElektrik.Name = "textBoxElektrik";
             this.textBoxElektrik.Size = new System.Drawing.Size(185, 25);
             this.textBoxElektrik.TabIndex = 12;
-            // 
-            // textBoxInternet
-            // 
-            this.textBoxInternet.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBoxInternet.Location = new System.Drawing.Point(137, 111);
-            this.textBoxInternet.Name = "textBoxInternet";
-            this.textBoxInternet.Size = new System.Drawing.Size(185, 25);
-            this.textBoxInternet.TabIndex = 14;
-            // 
-            // labelElektrik
-            // 
-            this.labelElektrik.AutoSize = true;
-            this.labelElektrik.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelElektrik.Location = new System.Drawing.Point(72, 53);
-            this.labelElektrik.Name = "labelElektrik";
-            this.labelElektrik.Size = new System.Drawing.Size(59, 17);
-            this.labelElektrik.TabIndex = 8;
-            this.labelElektrik.Text = "Elektrik:";
-            // 
-            // textBoxSu
-            // 
-            this.textBoxSu.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBoxSu.Location = new System.Drawing.Point(137, 80);
-            this.textBoxSu.Name = "textBoxSu";
-            this.textBoxSu.Size = new System.Drawing.Size(185, 25);
-            this.textBoxSu.TabIndex = 13;
             // 
             // labelSu
             // 
@@ -273,17 +267,23 @@ namespace PansiyonOtomasyon
             this.labelSu.TabIndex = 9;
             this.labelSu.Text = "Su:";
             // 
-            // labelInternet
+            // textBoxInternet
             // 
-            this.labelInternet.AutoSize = true;
-            this.labelInternet.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelInternet.Location = new System.Drawing.Point(70, 114);
-            this.labelInternet.Name = "labelInternet";
-            this.labelInternet.Size = new System.Drawing.Size(61, 17);
-            this.labelInternet.TabIndex = 10;
-            this.labelInternet.Text = "İnternet:";
+            this.textBoxInternet.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxInternet.Location = new System.Drawing.Point(137, 111);
+            this.textBoxInternet.Name = "textBoxInternet";
+            this.textBoxInternet.Size = new System.Drawing.Size(185, 25);
+            this.textBoxInternet.TabIndex = 14;
             // 
-            // FormStoklar
+            // textBoxSu
+            // 
+            this.textBoxSu.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxSu.Location = new System.Drawing.Point(137, 80);
+            this.textBoxSu.Name = "textBoxSu";
+            this.textBoxSu.Size = new System.Drawing.Size(185, 25);
+            this.textBoxSu.TabIndex = 13;
+            // 
+            // FormGiderler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -292,8 +292,8 @@ namespace PansiyonOtomasyon
             this.Controls.Add(this.groupBoxFaturalar);
             this.Controls.Add(this.groupBoxMutfak);
             this.MinimizeBox = false;
-            this.Name = "FormStoklar";
-            this.Text = "FormStoklar";
+            this.Name = "FormGiderler";
+            this.Text = "Giderler";
             this.Load += new System.EventHandler(this.FormStoklar_Load);
             this.groupBoxMutfak.ResumeLayout(false);
             this.groupBoxMutfak.PerformLayout();

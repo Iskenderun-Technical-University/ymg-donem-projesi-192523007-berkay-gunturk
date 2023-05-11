@@ -24,4 +24,13 @@ C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonO
 C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.FormOdalar.resources
 C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.BtnVerileriGoster.resources
 C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.FormGelirGider.resources
-C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.FormStoklar.resources
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.FormGiderler.resources
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\bin\Debug\Interop.WMPLib.dll
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\Interop.WMPLib.dll
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.csproj.ResolveComReference.cache
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.FormRadyo.resources
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.FormGazeteler.resources
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.FormSifreGuncelle.resources
+C:\Users\berka\Source\Repos\ymg-donem-projesi-192523007-berkay-gunturk\PansiyonOtomasyon\obj\Debug\PansiyonOtomasyon.FormMesajlar.resources

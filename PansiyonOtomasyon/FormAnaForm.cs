@@ -75,10 +75,34 @@ namespace PansiyonOtomasyon
 
         private void btnStoklar_Click(object sender, EventArgs e)
         {
-            FormStoklar fr = new FormStoklar();
+            FormGiderler fr = new FormGiderler();
             fr.Show();
             
 
+        }
+
+        private void btnRadyo_Click(object sender, EventArgs e)
+        {
+            FormRadyo fr = new FormRadyo();
+            fr.Show();
+        }
+
+        private void btnGazeteler_Click(object sender, EventArgs e)
+        {
+            FormGazeteler fr = new FormGazeteler();
+            fr.Show();
+        }
+
+        private void btnSifreGuncelle_Click(object sender, EventArgs e)
+        {
+            FormSifreGuncelle fr = new FormSifreGuncelle();
+            fr.Show();
+        }
+
+        private void btnMusteriMsj_Click(object sender, EventArgs e)
+        {
+            FormMesajlar fr = new FormMesajlar();
+            fr.Show();
         }
     }
 }

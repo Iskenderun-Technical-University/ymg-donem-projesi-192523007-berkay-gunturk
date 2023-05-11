@@ -58,11 +58,23 @@
     <Compile Include="FormAnaForm.Designer.cs">
       <DependentUpon>FormAnaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormGazeteler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGazeteler.Designer.cs">
+      <DependentUpon>FormGazeteler.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGelirGider.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormGelirGider.Designer.cs">
       <DependentUpon>FormGelirGider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMesajlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMesajlar.Designer.cs">
+      <DependentUpon>FormMesajlar.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMusteriler.cs">
       <SubType>Form</SubType>
@@ -75,6 +87,18 @@
     </Compile>
     <Compile Include="FormOdalar.Designer.cs">
       <DependentUpon>FormOdalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRadyo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRadyo.Designer.cs">
+      <DependentUpon>FormRadyo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSifreGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSifreGuncelle.Designer.cs">
+      <DependentUpon>FormSifreGuncelle.cs</DependentUpon>
     </Compile>
     <Compile Include="FormStoklar.cs">
       <SubType>Form</SubType>
@@ -96,14 +120,26 @@
     <EmbeddedResource Include="FormAnaForm.resx">
       <DependentUpon>FormAnaForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormGazeteler.resx">
+      <DependentUpon>FormGazeteler.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormGelirGider.resx">
       <DependentUpon>FormGelirGider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMesajlar.resx">
+      <DependentUpon>FormMesajlar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMusteriler.resx">
       <DependentUpon>FormMusteriler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormOdalar.resx">
       <DependentUpon>FormOdalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRadyo.resx">
+      <DependentUpon>FormRadyo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSifreGuncelle.resx">
+      <DependentUpon>FormSifreGuncelle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormStoklar.resx">
       <DependentUpon>FormStoklar.cs</DependentUpon>
@@ -132,6 +168,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

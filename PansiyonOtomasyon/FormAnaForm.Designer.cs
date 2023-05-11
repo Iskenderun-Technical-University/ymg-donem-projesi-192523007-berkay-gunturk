@@ -42,7 +42,7 @@ namespace PansiyonOtomasyon
             this.textTarih = new System.Windows.Forms.Label();
             this.textTime = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnHavaDurumu = new System.Windows.Forms.Button();
+            this.btnSifreGuncelle = new System.Windows.Forms.Button();
             this.btnGazeteler = new System.Windows.Forms.Button();
             this.btnCikis = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -123,6 +123,7 @@ namespace PansiyonOtomasyon
             this.btnMusteriMsj.TabIndex = 6;
             this.btnMusteriMsj.Text = "Müşteri Mesajları";
             this.btnMusteriMsj.UseVisualStyleBackColor = true;
+            this.btnMusteriMsj.Click += new System.EventHandler(this.btnMusteriMsj_Click);
             // 
             // btnRadyo
             // 
@@ -133,6 +134,7 @@ namespace PansiyonOtomasyon
             this.btnRadyo.TabIndex = 7;
             this.btnRadyo.Text = "Radyo";
             this.btnRadyo.UseVisualStyleBackColor = true;
+            this.btnRadyo.Click += new System.EventHandler(this.btnRadyo_Click);
             // 
             // btnHakkimizda
             // 
@@ -169,15 +171,16 @@ namespace PansiyonOtomasyon
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // btnHavaDurumu
+            // btnSifreGuncelle
             // 
-            this.btnHavaDurumu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnHavaDurumu.Location = new System.Drawing.Point(578, 78);
-            this.btnHavaDurumu.Name = "btnHavaDurumu";
-            this.btnHavaDurumu.Size = new System.Drawing.Size(105, 58);
-            this.btnHavaDurumu.TabIndex = 11;
-            this.btnHavaDurumu.Text = "Hava Durumu";
-            this.btnHavaDurumu.UseVisualStyleBackColor = true;
+            this.btnSifreGuncelle.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSifreGuncelle.Location = new System.Drawing.Point(578, 78);
+            this.btnSifreGuncelle.Name = "btnSifreGuncelle";
+            this.btnSifreGuncelle.Size = new System.Drawing.Size(105, 58);
+            this.btnSifreGuncelle.TabIndex = 11;
+            this.btnSifreGuncelle.Text = "Şifre Güncelle";
+            this.btnSifreGuncelle.UseVisualStyleBackColor = true;
+            this.btnSifreGuncelle.Click += new System.EventHandler(this.btnSifreGuncelle_Click);
             // 
             // btnGazeteler
             // 
@@ -188,6 +191,7 @@ namespace PansiyonOtomasyon
             this.btnGazeteler.TabIndex = 12;
             this.btnGazeteler.Text = "Gazeteler";
             this.btnGazeteler.UseVisualStyleBackColor = true;
+            this.btnGazeteler.Click += new System.EventHandler(this.btnGazeteler_Click);
             // 
             // btnCikis
             // 
@@ -209,7 +213,7 @@ namespace PansiyonOtomasyon
             this.ClientSize = new System.Drawing.Size(904, 450);
             this.Controls.Add(this.btnCikis);
             this.Controls.Add(this.btnGazeteler);
-            this.Controls.Add(this.btnHavaDurumu);
+            this.Controls.Add(this.btnSifreGuncelle);
             this.Controls.Add(this.textTime);
             this.Controls.Add(this.textTarih);
             this.Controls.Add(this.btnHakkimizda);
@@ -243,7 +247,7 @@ namespace PansiyonOtomasyon
         private System.Windows.Forms.Label textTarih;
         private System.Windows.Forms.Label textTime;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button btnHavaDurumu;
+        private System.Windows.Forms.Button btnSifreGuncelle;
         private System.Windows.Forms.Button btnGazeteler;
         private System.Windows.Forms.Button btnCikis;
     }

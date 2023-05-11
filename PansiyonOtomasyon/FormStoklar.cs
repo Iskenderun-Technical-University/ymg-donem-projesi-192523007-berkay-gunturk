@@ -13,9 +13,9 @@ using System.Data.SqlClient;
 
 namespace PansiyonOtomasyon
 {
-    public partial class FormStoklar : Form
+    public partial class FormGiderler : Form
     {
-        public FormStoklar()
+        public FormGiderler()
         {
             InitializeComponent();
         }

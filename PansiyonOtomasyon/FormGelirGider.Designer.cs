@@ -235,6 +235,7 @@ namespace PansiyonOtomasyon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(589, 450);
             this.Controls.Add(this.lblFaturalar3);
@@ -255,8 +256,10 @@ namespace PansiyonOtomasyon
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormGelirGider";
-            this.Text = "FormGelirGider";
+            this.Text = "Gelir-Gider";
             this.ResumeLayout(false);
             this.PerformLayout();
 
